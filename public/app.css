@@ -91,6 +91,10 @@ section nav .icon i:hover{
     justify-content: center;
     margin-bottom: 30px;
 }
+.menu a{
+    text-decoration: none ;
+    color: #000;
+}
 
 .menu h1 span{
     color: #fac031;
@@ -108,6 +112,35 @@ section nav .icon i:hover{
     bottom: 15px;
 }
 
+
+
+.menu .new-recipe{
+    margin-top: 10px;
+    width: vw;
+    height: auto;
+    /* margin: 0 auto; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    overflow: 0;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    min-height: 0;
+    justify-content: center ;
+    grid-gap: 15px;
+}
+
+.menu .new-recipe .new-recipe-input{
+    margin-top: 10px;
+    width: vw;
+    height: auto;
+    /* margin: 0 auto; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    overflow: 0;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    min-height: 0;
+    justify-content: center ;
+    grid-gap: 15px;
+}
 .menu .menu_box{
     
     width: vw;
@@ -462,3 +495,5 @@ footer .end span{
     background: #fac031;
     border-radius: 15px;
 }
+
+

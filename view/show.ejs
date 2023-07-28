@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cajun Patatoes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <section id="Home">
+        <nav>
+            <div class="logo">
+                <img src="images/Recipes.png">
+            </div>
+    
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Dinner.html">Dinner</a></li>
+                <li><a href="">Meals</a></li>
+                <li><a href="">Ingredients</a></li>
+                <li><a href="">Occasions</a></li>
+                <li><a href="">Cuisine</a></li>
+                <li><a href="">Tips</a></li>
+            </ul>
+    
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-heart"></i>
+            </div>
+    
+        </nav>
+
+        <div class="main">
+            <h1>Our<span>Recipes</span></h1>
+            <div class="menu_box">
+                <div class="menu_card">
+    
+                    <div class="menu_image">
+                        <img src=<%= Recipe.img%>>
+                    </div>
+    
+                    <div class="small_card">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+    
+                    <div class="menu_info">
+                        <h2><%= Recipe.name%></h2>
+                        <p>
+                            <%= Recipe.desc %>
+                        </p>
+                        <div class="menu_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <div class="menu_info">
+                                <button href="CajunPatoes.html">Print Recipe</button>
+                                <button href="CajunPatoes.html">Share</button>
+                                <!-- <a href="CajunPatoes.html"><h3>Print Full Recipe</h3></a> -->
+                            </div>
+                            
+                        </div>
+
+                        <div class="Ingredients">
+                            <ol>
+                                <head >Ingredients</head>
+                                <div class="Ingredients-list">
+                                    <li>Lorem - 2qty</li>
+                                    <li>Ispsum - 2qty</li>
+                                    <li>Ispsum - 2gm</li>
+                                    <li>Ispsum - 2spoon</li>
+                                </div>
+                            </ol>
+                        </div>
+
+                        <div class="review">
+                            <label for="input">Write a review</label>
+                            <textarea name="input" id="" cols="30" rows="5"></textarea>
+                            <button>Submit</button>
+                        </div>
+                        
+                    </div>
+    
+                </div> 
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer_main">
+    
+                <div class="footer_tag">
+                    <h2>Location</h2>
+                    <p>India, Delhi</p>
+                </div>
+    
+                <div class="footer_tag">
+                    <h2>Contact</h2>
+                    <p>+91 12 3456 789</p>
+                    <p>recipespoint@wahoo.com</p>
+                </div>
+    
+                <div class="footer_tag">
+                    <h2>Follow Us </h2>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+    
+            </div>
+    
+        </footer>
+    </section>
+
+    
+    
+    
+</body>
+</html>

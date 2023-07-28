@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Recipes Point</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./app.css" type="text/css">
+    <link rel="stylesheet" href="/app.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -32,45 +32,25 @@
 
         </nav>
         <div class="menu" id="Menu">
-            <h1>Our<span>Recipes</span></h1>
-            <a href="/recipes/new"><h1>Add<span>Recipes</span></h1></a>
-            
-            <div class="menu_box">
-                
-                <% for( let Recipe of recipes) { %>
-                    <div class="menu_card">
-                        <div class="menu_image">
-                            <img src=<%= Recipe.img%>>
-                        </div>
-                        <div class="small_card">
-                            <i class="fa-solid fa-heart"></i>
-                        </div>
-
-                        <div class="menu_info">
-                            <h2><%= Recipe.name%></h2>
-                            <p>
-                                <%= Recipe.desc %>
-                            </p>
-                            <div class="menu_icon">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i>
-                                <div class="menu_info">
-                                    <a href="/recipes/<%=Recipe.id%>"><h3>View Full Recipe</h3></a>
-                                </div>
-                                
-                            </div>
-                            
-                        </div>
-                    </div> 
-                    
-                <% } %>
-                
-            </div> 
-        </div> 
-
+            <h1>New<span>Recipes</span></h1>
+            <div class="new-recipe">
+                <form action="/recipes" method="POST">
+                    <div class="new-recipe-input">
+                        <label for="name">Recipe Name:</label>
+                        <input name="name" id="name">
+                    </div>
+                    <div class="new-recipe-input">
+                        <label for="img">Image link:</label>
+                        <input name="im" id="img">
+                    </div>
+                    <div class="new-recipe-input">
+                        <label for="desc">Recipe desc:</label>
+                        <input name="desc" id="desc">
+                    </div>
+                    <button type="submit">Add</button>
+                </form>
+            </div>
+        </div>
         <footer>
             <div class="footer_main">
     
